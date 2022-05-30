@@ -64,7 +64,7 @@
   <project path="external/google-fonts/cutive-mono" name="android_external_google-fonts_cutive-mono" remote="proton" />
   
   <!-- Pixel Launcher Mod -->
-  <project path="vendor/PixelLauncher" name="Ardjlon/vendor_PixelLauncher" remote="github" revision="ammit" />
+  <project path="vendor/PixelLauncher" name="Ardjlon/vendor_PixelLauncher" remote="github" revision="taweret" />
   
   <!-- Toolchain -->
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
