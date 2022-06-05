@@ -38,6 +38,10 @@
            fetch="https://github.com/projectarcana-aosp"
            revision="refs/heads/12.x" />
 
+  <remote  name="arcana-ext"
+           fetch="https://github.com/arcana-ext"
+           revision="refs/heads/12.x" />
+
   <remote  name="arrow-gitlab"
            fetch="https://gitlab.com/arrowos-project"
            review="https://review.arrowos.net/"

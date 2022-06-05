@@ -2,8 +2,8 @@
 <manifest>
 
   <!-- core -->
-  <project path="manifest" name="manifest" remote="arcana" />
-  <project path="build/make" name="platform_build" remote="arcana" >
+  <project path="manifest" name="manifest" remote="arcana-ext" />
+  <project path="build/make" name="platform_build" remote="arcana-ext" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -38,7 +38,8 @@
   
   <!-- framework repos -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="arcana" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="arcana-ext" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="arcana-ext" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="arcana" />
   
@@ -49,10 +50,10 @@
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
   <project path="packages/apps/GamingMode" name="packages_apps_GamingMode" remote="arcana" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="arcana" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="arcana" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="arcana" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="arcana-ext" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="arcana-ext" />
   <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="arcana" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="arcana" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="arcana-ext" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="arcana" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="arcana" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="arcana" />
@@ -66,14 +67,14 @@
   <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
   
   <!-- system -->
-  <project path="system/bt" name="platform_system_bt" remote="arcana" />
+  <project path="system/bt" name="platform_system_bt" remote="arcana-ext" />
   <project path="system/core" name="platform_system_core" remote="arcana" />
   <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="arcana" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="arcana" />
   <project path="system/vold" name="platform_system_vold" remote="arcana" />
   
   <!-- vendor -->
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana-ext" />
   <project path="vendor/support" name="platform_vendor_support" remote="arcana" />
   <project path="vendor/sp" name="vendor_support" remote="arcana" />
 
