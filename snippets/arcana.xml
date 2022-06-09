@@ -13,16 +13,16 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="arrow" />
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="arcana" >
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="arcana-ext" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- platform -->
   <project path="art" name="platform_art" remote="arcana" />
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana-ext" />
   <project path="libcore" name="platform_libcore" groups="pdk" remote="arcana" />  
-  <project path="bootable/recovery" name="platform_bootable_recovery" remote="arcana" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="arcana-ext" />
 
    <!-- device sepolicy -->   
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
@@ -37,14 +37,14 @@
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
   
   <!-- framework repos -->
-  <project path="frameworks/av" name="platform_frameworks_av" remote="arcana" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="arcana-ext" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="arcana-ext" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="arcana-ext" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="arcana" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="arcana-ext" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="arcana-ext" />
   
   <!-- packages -->
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="arcana" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="arcana-ext" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="arcana" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="arcana" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
@@ -56,12 +56,12 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="arcana-ext" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="arcana" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="arcana" />
-  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="arcana" />
-  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="arcana" />
-  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="arcana" />
-  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" remote="arcana" />
-  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="arcana" />
-  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="arcana" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="arcana-ext" />
+  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="arcana-ext" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="arcana-ext" />
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" remote="arcana-ext" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="arcana-ext" />
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="arcana-ext" />
   
   <!-- overlays -->
   <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
@@ -70,8 +70,8 @@
   <project path="system/bt" name="platform_system_bt" remote="arcana-ext" />
   <project path="system/core" name="platform_system_core" remote="arcana" />
   <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="arcana" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="arcana" />
-  <project path="system/vold" name="platform_system_vold" remote="arcana" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="arcana-ext" />
+  <project path="system/vold" name="platform_system_vold" remote="arcana-ext" />
   
   <!-- vendor -->
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana-ext" />
