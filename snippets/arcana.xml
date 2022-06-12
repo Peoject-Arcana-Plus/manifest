@@ -78,4 +78,7 @@
   <project path="vendor/support" name="platform_vendor_support" remote="arcana" />
   <project path="vendor/sp" name="vendor_support" remote="arcana" />
 
+  <!-- Pixel Launcher Mod -->
+  <project path="vendor/PixelLauncher" name="vendor_PixelLauncher" remote="arcana-ext" revision="12.x" />
+
 </manifest>
