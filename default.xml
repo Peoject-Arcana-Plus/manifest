@@ -33,7 +33,11 @@
   <remote  name="iu"
            revision="twelve"
            fetch="https://gitlab.com/dlwlrma123/" />
-           
+
+  <remote  name="arcana-lab"
+           revision="12.1"
+           fetch="https://gitlab.com/soumyajit007-creator/" />
+
   <remote  name="arcana"
            fetch="https://github.com/projectarcana-aosp"
            revision="refs/heads/12.x" />
