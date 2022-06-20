@@ -19,22 +19,22 @@
   </project>
 
   <!-- platform -->
-  <project path="art" name="platform_art" remote="arcana" />
+  <project path="art" name="platform_art" remote="arcana-ext" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana-ext" />
-  <project path="libcore" name="platform_libcore" groups="pdk" remote="arcana" />  
+  <project path="libcore" name="platform_libcore" groups="pdk" remote="arcana-ext" />  
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="arcana-ext" />
 
    <!-- device sepolicy -->   
-  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
-  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="arcana" />
-  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="arcana" />
-  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" remote="arcana" revision="12.x-legacy-um" />
+  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana-ext" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="arcana-ext" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="arcana-ext" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" remote="arcana-ext" revision="12.x-legacy-um" />
 
   <!-- external repos -->
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="arcana" />
-  <project path="external/fastrpc" name="android_external_fastrpc" remote="arcana" />
-  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
-  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="arcana-ext" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="arcana-ext" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana-ext" />
+  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana-ext" />
   
   <!-- framework repos -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="arcana-ext" />
@@ -45,17 +45,17 @@
   
   <!-- packages -->
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="arcana-ext" />
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="arcana" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="arcana" />
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="arcana-ext" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="arcana-ext" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana-ext" />
   <project path="packages/apps/GameSpace" name="platform_packages_apps_GameSpace" remote="arcana-ext" />
-  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="arcana" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="arcana-ext" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="arcana-ext" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="arcana-ext" />
-  <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="arcana" />
+  <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="arcana-ext" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="arcana-ext" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="arcana-ext" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="arcana" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="arcana-ext" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="arcana-ext" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="arcana-ext" />
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="arcana-ext" />
@@ -64,19 +64,19 @@
   <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="arcana-ext" />
   
   <!-- overlays -->
-  <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
+  <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana-ext" />
   
   <!-- system -->
   <project path="system/bt" name="platform_system_bt" remote="arcana-ext" />
-  <project path="system/core" name="platform_system_core" remote="arcana" />
-  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="arcana" />
+  <project path="system/core" name="platform_system_core" remote="arcana-ext" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="arcana-ext" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="arcana-ext" />
   <project path="system/vold" name="platform_system_vold" remote="arcana-ext" />
   
   <!-- vendor -->
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana-ext" />
-  <project path="vendor/support" name="platform_vendor_support" remote="arcana" />
-  <project path="vendor/sp" name="vendor_support" remote="arcana" />
+  <project path="vendor/support" name="platform_vendor_support" remote="arcana-ext" />
+  <project path="vendor/sp" name="vendor_support" remote="arcana-ext" />
 
   <!-- Pixel Launcher Mod -->
   <project path="vendor/PixelLauncher" name="vendor_PixelLauncher" remote="arcana-ext" revision="12.x" />
